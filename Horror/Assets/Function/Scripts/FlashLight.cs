@@ -6,8 +6,8 @@ using TMPro;
 public class FlashLight : MonoBehaviour
 {   
     public Light light;
-    public TMP_Text text;
-    public TMP_Text batteryText;
+    public TMP_Text batteryTimeText;
+    public TMP_Text batteriesText;
 
     public float batteryTime = 100;
     public float batteries =0;
@@ -19,7 +19,7 @@ public class FlashLight : MonoBehaviour
 
     void Start()
     {
-        text.text = "Flashlight : " + batteryTime + "%" ;
+        batteryTimeText.text = "손전등 : " + batteryTime + "%" ;
         light = GetComponent<Light>();
 
         off = true;
@@ -29,8 +29,8 @@ public class FlashLight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = batteryTime.ToString("0") + "%";
-        batteryText.text = batteries.ToString();
+        batteryTimeText.text = "손전등 : "+ batteryTime.ToString("0") + "%";
+        batteriesText.text = "배터리 수 : "+ batteries.ToString();
 
         if(Input.GetKeyDown(KeyCode.F) && off)
         {
