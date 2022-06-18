@@ -109,29 +109,32 @@ public class PlayerMovement : MonoBehaviour
     // 어떤 키의 입력에 따라 상태를 변화시키기 위한 상태 적용 메서드
     private void StateHandler()
     {
-        // Crouching
-        if (grounded && Input.GetKey(crouchKey))
+        if (grounded)
         {
-            state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
-        }
-        // Running
-        if (grounded && Input.GetKey(runKey))
-        {
-            state = MovementState.running;
-            moveSpeed = runSpeed;
-        }
-        // SlowlyWalking
-        else if (grounded && Input.GetKey(slowWalkKey))
-        {
-            state = MovementState.slowlyWalking;
-            moveSpeed = slowlyWalkSpeed;
-        }
-        // Walking
-        else if(grounded)
-        {
-            state = MovementState.walking;
-            moveSpeed = walkSpeed;
+            // 앉기
+            if (Input.GetKey(crouchKey))
+            {
+                state = MovementState.crouching;
+                moveSpeed = crouchSpeed;
+            }
+            // 달리기
+            if (Input.GetKey(runKey))
+            {
+                state = MovementState.running;
+                moveSpeed = runSpeed;
+            }
+            // 느리게 걷기
+            else if (Input.GetKey(slowWalkKey))
+            {
+                state = MovementState.slowlyWalking;
+                moveSpeed = slowlyWalkSpeed;
+            }
+            // 걷기
+            else
+            {
+                state = MovementState.walking;
+                moveSpeed = walkSpeed;
+            }
         }
     }    
 
