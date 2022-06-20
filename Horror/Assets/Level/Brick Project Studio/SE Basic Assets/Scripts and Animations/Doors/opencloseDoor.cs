@@ -22,12 +22,12 @@ namespace SojaExiles
 			{
 				if (Player)
 				{
-					float dist = Vector3.Distance(Player.position, transform.position);
-					if (dist < 15)
+					float distance = Vector3.Distance(Player.position, transform.position);
+					if (distance < 3)
 					{
 						if (open == false)
 						{
-							if (Input.GetMouseButtonDown(0))
+							if (Input.GetKeyDown(KeyCode.E))
 							{
 								StartCoroutine(opening());
 							}
@@ -36,7 +36,7 @@ namespace SojaExiles
 						{
 							if (open == true)
 							{
-								if (Input.GetMouseButtonDown(0))
+								if (Input.GetKeyDown(KeyCode.E))
 								{
 									StartCoroutine(closing());
 								}
