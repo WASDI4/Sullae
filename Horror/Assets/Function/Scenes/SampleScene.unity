@@ -915,8 +915,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 133270555}
-  text: {fileID: 1944063031}
-  batteryText: {fileID: 2091771027}
+  BatterTimetext: {fileID: 1944063031}
+  batteriesText: {fileID: 2091771027}
   batteryTime: 100
   batteries: 2
   flashOn: {fileID: 1794895849}
@@ -3310,8 +3310,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea59c5e21f622b84586d485f4b45b02e, type: 2}
+  m_sharedMaterial: {fileID: 5882342911035335380, guid: ea59c5e21f622b84586d485f4b45b02e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4606,8 +4606,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea59c5e21f622b84586d485f4b45b02e, type: 2}
+  m_sharedMaterial: {fileID: 5882342911035335380, guid: ea59c5e21f622b84586d485f4b45b02e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4913,8 +4913,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea59c5e21f622b84586d485f4b45b02e, type: 2}
+  m_sharedMaterial: {fileID: 5882342911035335380, guid: ea59c5e21f622b84586d485f4b45b02e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
